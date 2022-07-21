@@ -1,3 +1,14 @@
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?deac12bf19ecfc248e4dd032e5137358";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+
 //取得对象，绑定自定义函数
 function $_(e) {
     if (typeof e == 'string') {
