@@ -650,6 +650,9 @@ padding-top: 3px;}
     float: left; 
     padding: 0 0.75em;
   }
+  .mainnav a.innerlink:hover{
+    border-bottom: 2px solid #f80;
+  }
 
 .mainbody {
   background: #fff;
