@@ -642,11 +642,14 @@ table {
     text-align: center;
     font-size: 1.25em;
     font-weight: bold;
-    padding: 0 0.75em;
     text-decoration: none;
-    color: #333; }
+    color: #333; 
+  line-height: 30px;
+padding-top: 3px;}
   .mainnav li {
-    float: left; }
+    float: left; 
+    padding: 0 0.75em;
+  }
 
 .mainbody {
   background: #fff;
