@@ -1483,3 +1483,7 @@ img.avatari {
     padding: 0 0 0 0.5em; }
 
 /*# sourceMappingURL=style.css.map */
+
+p{
+  word-break: break-word;
+}
