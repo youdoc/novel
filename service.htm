@@ -1,290 +1,254 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="小说精品屋,小说精品屋技术支持,java技术支持,java技术咨询,java远程协助,java系统安装">
-	<meta name="description" content="小说精品屋提供开源免费的小说系统和java技术服务,包括java技术咨询、java远程协助和java系统安装.">
-	<title>小说精品屋-服务项目</title>
-	<link rel="stylesheet" href="./static/style.css" type="text/css" media="all">
-	<script type="text/javascript" src="./static/common.js"></script>
-	<script type="text/javascript" src="./static/theme.js"></script>
-
-	
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="小说精品屋,小说精品屋技术支持,java技术支持,java技术咨询,java远程协助,java系统安装">
+    <meta name="description" content="小说精品屋提供开源免费的小说系统和java技术服务,包括java技术咨询、java远程协助和java系统安装.">
+    <title>小说精品屋-服务项目</title>
+	<link href="./static/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/animate.min.css">
+    <style>
+        .bg-primary {
+            background-color: #3eaf7c;
+        }
+        .text-primary {
+            color: #3eaf7c;
+        }
+        .hover\:text-primary:hover {
+            color: #3eaf7c;
+        }
+        .border-primary {
+            border-color: #3eaf7c;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .table-striped tbody tr:nth-child(odd) {
+            background-color: #f9fafb;
+        }
+        .table-hover tbody tr:hover {
+            background-color: #f0f4f8;
+        }
+    </style>
 </head>
-<body>
-
-<div class="header cf">
-	<div class="main row cf">
-		<div class="col3">
+<body class="bg-gray-100">
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+		<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+			<!-- Logo -->
 			<div class="logo">
-			<a href="./index.htm"><img src="./static/logo.png" border="0" alt="小说精品屋"></a>
+				<a href="./index.htm">
+					<img src="./static/logo.png" alt="小说精品屋" class="h-12 animate__animated animate__fadeInLeft hover:rotate-12 hover:scale-110 transition-transform duration-300">
+				</a>
+			</div>
+	
+			<!-- 桌面端导航 -->
+			<nav class="hidden md:flex space-x-8">
+				<a href="./index.html" class="text-gray-700 hover:text-primary font-semibold nav-link relative group">
+					首页
+					<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+				</a>
+				<a href="./service.htm" class="text-gray-700 hover:text-primary font-semibold nav-link relative group">
+					服务项目
+					<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+				</a>
+				<a href="https://www.xxyopen.com" target="_blank" class="text-gray-700 hover:text-primary font-semibold nav-link relative group">
+					技术博客
+					<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+				</a>
+				<a href="http://docs.xxyopen.com/" target="_blank" class="text-gray-700 hover:text-primary font-semibold nav-link relative group">
+					文档教程
+					<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+				</a>
+				<a href="https://www.bilibili.com/video/BV18e41197xs" target="_blank" class="text-gray-700 hover:text-primary font-semibold nav-link relative group">
+					项目演示
+					<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+				</a>
+			</nav>
+	
+			<!-- 移动端汉堡菜单 -->
+			<button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-primary focus:outline-none">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+				</svg>
+			</button>
+		</div>
+	
+		<!-- 移动端导航菜单 -->
+		<div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+			<div class="px-6 py-4 space-y-4">
+				<a href="./index.html" class="block text-gray-700 hover:text-primary font-semibold">首页</a>
+				<a href="./service.htm" class="block text-gray-700 hover:text-primary font-semibold">服务项目</a>
+				<a href="https://www.xxyopen.com" target="_blank" class="block text-gray-700 hover:text-primary font-semibold">技术博客</a>
+				<a href="http://docs.xxyopen.com/" target="_blank" class="block text-gray-700 hover:text-primary font-semibold">文档教程</a>
+				<a href="https://www.bilibili.com/video/BV18e41197xs" target="_blank" class="block text-gray-700 hover:text-primary font-semibold">项目演示</a>
 			</div>
 		</div>
-		<div class="col9 last">
-			<ul class="mainnav">
-				<li><a class="innerlink" href="./index.htm">首页</a></li>
-				<li><a class="innerlink" style=" border-bottom: 2px solid #f80;" href="./service.htm">服务项目</a></li>
-                <li><a target='_blank' href="https://www.xxyopen.com">技术博客<span style="padding-left: 1px;"><svg style="color: #f80;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></li>
-				<li><a target='_blank' href="http://docs.xxyopen.com/">文档教程<span style="padding-left: 1px;"><svg style="color: #f80;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></li>
-				<li><a target='_blank' href="https://www.bilibili.com/video/BV1Zo4y187Mi">项目演示<span style="padding-left: 1px;"><svg style="color: #f80;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></li>
-			</ul>
-		</div>
-	</div>
-</div>
+	</header>
 
-    <div class="main"><div class="mainbody">
-		
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- 服务项目表格 -->
+            <div class="col-span-2">
+                <div class="bg-white p-6 rounded-lg shadow-lg card animate__animated animate__fadeInUp">
+                    <h2 class="text-2xl font-bold mb-6 text-primary">小说精品屋系列项目报价</h2>
+                    <table class="w-full text-left table-striped table-hover">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="p-3">名称</th>
+                                <th class="p-3">价格</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="p-3">novel</td>
+                                <td class="p-3">开源免费</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3">novel-plus</td>
+                                <td class="p-3">开源免费</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3">novel-cloud</td>
+                                <td class="p-3">开源免费</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-sm text-gray-600 mt-4">注：小说精品屋全系列产品均开源免费。</p>
+                </div>
 
-		
-		
+                <div class="bg-white p-6 rounded-lg shadow-lg mt-8 card animate__animated animate__fadeInUp">
+                    <h2 class="text-2xl font-bold mb-6 text-primary">其它增值服务价格</h2>
+                    <table class="w-full text-left table-striped table-hover">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="p-3">服务内容</th>
+                                <th class="p-3">价格</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="p-3">技术咨询</td>
+                                <td class="p-3">50元</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3">远程协助</td>
+                                <td class="p-3">50元</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3">安装网站系统</td>
+                                <td class="p-3">100元</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3">技术支持（包月）</td>
+                                <td class="p-3">600元</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3">同系统数据迁移</td>
+                                <td class="p-3">500元/次</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3">不同系统数据迁移</td>
+                                <td class="p-3">1000元/次</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3">定制化二次开发</td>
+                                <td class="p-3">500元起</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3">Java整站开发</td>
+                                <td class="p-3">1000元起</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3">仿站</td>
+                                <td class="p-3">1000元起</td>
+                            </tr>
+                        </tbody>
+                    </table>
+					<p class="text-sm text-gray-600 mt-4">注：购买服务或商务合作请添加右侧微信号。</p>
+                </div>
+            </div>
 
-		
+            <!-- 右侧联系信息 -->
+            <div class="col-span-1">
+                <!-- 联系我们 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card animate__animated animate__fadeInRight">
+                    <h2 class="text-2xl font-bold mb-6 text-primary">联系我们</h2>
+                    <ul class="space-y-6">
+                        <!-- 邮箱 -->
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-700">邮箱</p>
+                                <p class="text-gray-900 font-medium">xxyopen@foxmail.com</p>
+                            </div>
+                        </li>
+            
+                        <!-- 微信 -->
+                        <li class="flex items-start">
+                            <div class="w-12 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/ssvg" class="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-700">微信</p>
+                                <p class="text-gray-900 font-medium">xxy19921208</p>
+                                <p class="text-xs text-gray-500 mt-1">注：该微信号仅用于购买服务或商务合作，添加微信时请备注需要购买的服务。</p>
+                            </div>
+                        </li>
+            
+                        <!-- 微信公众号 -->
+                        <li class="flex items-start">
+                            <div class="w-10 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-gray-700">微信公众号</p>
+                                <img src="https://youdoc.github.io/img/qrcode_for_gh.jpg" alt="微信公众号二维码" class="w-24 mt-2">
+                                <p class="text-xs text-gray-500 mt-1">注：公众号发布项目动态、前端模版、爬虫规则、文档教程等。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
+                <!-- 赞赏支持 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg mt-8 card animate__animated animate__fadeInRight">
+                    <h2 class="text-2xl font-bold mb-6 text-primary">赞赏支持</h2>
+                    <p class="text-gray-700 mb-4">支持作者持续开发与维护：</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>服务器的费用也是一笔开销</li>
+                        <li>发布更多项目文档和技术教程</li>
+                        <li>开发更多前端模版</li>
+                        <li>一杯咖啡</li>
+                    </ul>
+                    <img src="https://s1.ax1x.com/2020/10/31/BUQJwq.png" alt="赞赏二维码" class="w-48 mt-4">
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<div class="row">
-			
-			<div class="col8" style="margin-top: 1.5em;">
-			
-
-					
-
-  <div class="tabcontent">
-  	 <!-- tab1 -->
-     <div class="tabvalue" >
-	<table border="0" width="100%" class="grid">
-	<caption>小说精品屋系列项目报价 </caption>
-		<tr>
-			<td class="head" style="width:20%">名称</td>
-			<td class="head" style="width:15%">价格</td>
-		</tr>
-		<tr>
-			<td width="291">novel</td>
-			<td width="293">开源免费</td>
-		</tr>
-		<tr>
-			<td>novel-plus</td>
-			<td>开源免费</td>
-		</tr>
-		<tr>
-			<td>novel-cloud</td>
-			<td>开源免费</td>
-		</tr>
-		<!-- <tr>
-			<td>novel-pro</td>
-			<td>199元（9月1日上线，提前预约仅需99元）</td>
-		</tr> -->
-</table>
-<p class="hot">注：小说精品屋全系列产品均开源免费。</p>
-<!-- <p class="hot">注：novel-pro（专业版）源码不出售，购买专业版后，永久免费升级</p> -->
-	 </div>
-	 <!-- tab2 -->
-
-	
-  </div>
-
-
-
-	 <div class="tabcontent" style="margin-top: 15px;">
-
-		<!-- tab2 -->
-		<div class="tabvalue" >
-		<table border="0" width="100%" class="grid">
-	   <caption>其它增值服务价格 </caption>
-		   <tr>
-			   <td class="head" style="width:20%">服务内容</td>
-			   <td class="head" style="width:15%">价格</td>
-			   <!-- <td class="head">说明</td> -->
-		   </tr>
-		   <tr>
-			   <td>技术咨询</td>
-			   <td>50元</td>
-			   <!-- <td>购买一周内不限制咨询范畴和次数，超过一周限制每周一次</td> -->
-		   </tr>
-		   <tr>
-			   <td>远程协助</td>
-			   <td>50元</td>
-			   <!-- <td>解决不了问题不收费</td> -->
-		   </tr>
-		   <tr>
-			   <td>安装网站系统</td>
-			   <td>100元</td>
-			   <!-- <td>不限制安装平台，Windows和Linux的不同发行版都可以</td> -->
-		   </tr>
-		   <tr>
-			<td>技术支持（包月）</td>
-			<td>600元</td>
-			<!-- <td>不限制安装平台，Windows和Linux的不同发行版都可以</td> -->
-		</tr>
-		   <tr>
-			   <td>同系统数据迁移</td>
-			   <td>500元/次</td>
-			   <!-- <td>例如迁移novel-plus的数据到另外一台服务器上</td> -->
-		   </tr>
-		   <tr>
-			   <td>不同系统数据迁移</td>
-			   <td>1000元/次</td>
-			   <!-- <td>例如迁移novel-plus的数据到其他小说系统</td> -->
-		   </tr>
-		  
-		   <tr>
-			   <td>定制化二次开发</td>
-			   <td>500元起</td>
-			   
-		   </tr> 
-		   <tr>
-			   <td>Java整站开发</td>
-			   <td>1000元起</td>
-			   
-		   </tr>
-		   <tr>
-			   <td>仿站</td>
-			   <td>1000元起</td>
-			   
-		   </tr>
-   </table>
-   <p class="hot">注：购买服务或商务合作请添加右侧微信号。</p>
-		</div>
-   
-		<!-- tab3 -->
-		<div class="tabvalue" style="display:none">
-		   <table border="0" width="100%" class="grid">
-		  <caption>999 元/年 </caption>
-		   
-			  <tr>
-				  <td>1.无限制的技术咨询服务免费提供</td>
-				  
-				  <!-- <td>购买一周内不限制咨询范畴和次数，超过一周限制每周一次</td> -->
-			  </tr>
-			  <tr>
-				  <td>2.每月一次的远程协助服务免费提供</td>
-				  
-				  <!-- <td>解决不了问题不收费</td> -->
-			  </tr>
-			   <tr>
-				  <td>3.网站系统免费安装</td>
-				  
-				  <!-- <td>购买一周内不限制咨询范畴和次数，超过一周限制每周一次</td> -->
-			  </tr>
-			  <tr>
-			   <td>4.novel-pro（专业版）免费提供</td>
-			  
-			   <!-- <td>不限制安装平台，Windows和Linux的不同发行版都可以</td> -->
-		   </tr>
-			  <tr>
-				  <td>5.付费爬虫规则每月免费供应</td>
-				 
-				  <!-- <td>不限制安装平台，Windows和Linux的不同发行版都可以</td> -->
-			  </tr>
-			 
-			 
-			  
-	  </table>
-	  <p class="hot">注：购买年费会员请添加右侧微信号，并备注。</p>
-		   </div>
-	   
-	 </div>
-
-
-
-
-</div>
-
-<div class="col4 last">
-						
-						
-					
-						
-						
-						
-						<div class="blockc"><div class="blockb" style="height:25em;">
-					<dl>
-						<dt>联系我们</dt>
-						<dd class="fsl"><span class="iconfont hot">◆</span>邮箱: xxyopen@foxmail.com</dd>
-						<!--<dd class="fsl"><a class="db" href="tencent://message/?uin=1179705413&Site=&Menu=yes"><span class="iconfont hot">&#xee94;</span> QQ: 1179705413</a></dd>-->
-						<dd class="fsl">
-						<span class="iconfont hot">◆</span>微信：xxy19921208
-						
-						</dd>
-						<p class="fss gray">注：该微信号仅用于购买服务或商务合作，添加微信时请备注需要购买的服务。</p>
-                      <!--  <dd class="fsl"><span class="iconfont hot">◆</span>QQ 交流群: </dd>
-                        <p>345291517(1群)</p>
-                        <p>442315914(2群)</p>
-                         <p>496623929(3群)</p>
-                        <p>101224630(4群)</p>
-						<p class="fss gray">注：QQ 很少用，请关注公众号加微信群</p> -->
-                        
-                        <dd class="fsl"><span class="iconfont hot">◆</span>微信公众号：</dd>
-                         <dd>
-
-                            <p><img width=100  src="https://youdoc.github.io/img/qrcode_for_gh.jpg"/></p>
-                           
-						</dd>
-                        <dd>
-
-                            
-                            <p class="fss gray">注：公众号发布项目动态、前端模版、爬虫规则、文档教程等。</p>
-						</dd>
-                        
-					</dl>
-				</div></div>
-							
-
-    <div class="blockc">
-        
-        <div class="blockb" style="height:22em;">
-						<dl>
-						<dt>赞赏支持作者持续开发与维护</dt>
-						<dd ><li>服务器的费用也是一笔开销</li></dd>
-                        <dd ><li>发布更多项目文档和技术教程</li></dd>
-                        <dd ><li>开发更多前端模版</li></dd>
-                        <dd ><li>一杯咖啡</li></dd>
-						<dd >
-						
-						<p><img width=250  src="https://s1.ax1x.com/2020/10/31/BUQJwq.png"/></p>
-						</dd>
-					</dl>
-				</div>
-	
-	</div>
-
-
-	<div class="blockc">
-		
-	</div>
-						
-						
-					</div>
-			
-			<div class="cb"></div>
-		</div>
-	</div></div>
-
-		
-		<div class="cb"></div>
-    
-
-
-
-<div class="footer">
-	<div class="main">
-		<ul class="footnav cf">
-		<li><a href="https://my.oschina.net/java2nb" target="_blank"><span class="iconfont note">■</span>开源中国</a></li>
-		<li><a href="https://gitee.com/xiongxyang" target="_blank"><span class="iconfont note">■</span>码云</a></li>
-		<li><a href="https://github.com/201206030" target="_blank"><span class="iconfont note">■</span>GitHub</a></li>
-		<li><a href="https://www.xxyopen.com" target="_blank"><span class="iconfont note">■</span>博客</a></li>
-
-		<!--<li><a href="tencent://message/?uin=1179705413&Site=&Menu=yes"><span class="iconfont note">■</span>联系我们</a></li>-->
-		<li><a href="mailto:xxyopen@foxmail.com"><span class="iconfont note">■</span>联系我们</a></li>	
-		</ul>
-		<div class="gray fss">
-			Copyright &#169; 2019-2024 小说精品屋 版权所有<br>
-			</div>
-
-	</div>
-</div>
-
-
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <ul class="flex justify-center space-x-8 mb-4">
+                <li><a href="https://my.oschina.net/java2nb" target="_blank" class="hover:text-primary">开源中国</a></li>
+                <li><a href="https://gitee.com/xiongxyang" target="_blank" class="hover:text-primary">码云</a></li>
+                <li><a href="https://github.com/201206030" target="_blank" class="hover:text-primary">GitHub</a></li>
+                <li><a href="https://www.xxyopen.com" target="_blank" class="hover:text-primary">博客</a></li>
+                <li><a href="mailto:xxyopen@foxmail.com" class="hover:text-primary">联系我们</a></li>
+            </ul>
+            <p class="text-sm">Copyright © 2019-2025 小说精品屋 版权所有</p>
+        </div>
+    </footer>
 </body>
-
-
-	
-	</html>
+</html>
