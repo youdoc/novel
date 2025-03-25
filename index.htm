@@ -8,7 +8,11 @@
     <title>小说精品屋-GitHub开源小说系统</title>
     <link href="./static/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./static/animate.min.css">
-    <style>
+<!-- Tailwind CSS -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<!-- Particles.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<style>
         .bg-primary {
             background-color: #3eaf7c;
         }
@@ -66,8 +70,8 @@
 
         /* 移动端优化 */
         @media (max-width: 768px) {
-            .primary-to-green-gradient h2 {
-                font-size: 2rem;
+            h2 {
+                font-size: 2rem !important;
             }
             .primary-to-green-gradient p {
                 font-size: 1rem;
@@ -165,34 +169,36 @@
 		});
 	</script>
 
-    <section class="primary-to-green-gradient">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold mb-6 animate__animated animate__fadeIn">小说建站开源解决方案</h2>
-            <p class="text-xl mb-12 animate__animated animate__fadeInUp">开源小说文学建站 CMS 系统</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg card">
-                    <div class="text-3xl mb-4 icon-hover">🎨</div>
-                    <h3 class="text-xl font-semibold mb-2">个性化定制开发</h3>
-                    <p class="text-gray-100">提供界面及功能个性化定制开发，满足您的独特需求。</p>
-                </div>
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg card">
-                    <div class="text-3xl mb-4 icon-hover">✍️</div>
-                    <h3 class="text-xl font-semibold mb-2">优秀作家创作平台</h3>
-                    <p class="text-gray-100">为优秀作家提供便捷的创作环境和工具。</p>
-                </div>
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg card">
-                    <div class="text-3xl mb-4 icon-hover">📚</div>
-                    <h3 class="text-xl font-semibold mb-2">读者阅读体验</h3>
-                    <p class="text-gray-100">优化读者阅读体验，提升用户留存率。</p>
-                </div>
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg card">
-                    <div class="text-3xl mb-4 icon-hover">🌐</div>
-                    <h3 class="text-xl font-semibold mb-2">互联网转型需求</h3>
-                    <p class="text-gray-100">符合传统出版行业的互联网转型需求。</p>
-                </div>
+<section class="relative" style="padding: 150px 0px 70px 0px">
+    <!-- 动态粒子背景 -->
+    <div id="particles-js" class="absolute inset-0 bg-gray-900"></div>
+    <div class="container mx-auto px-6 text-center relative z-10">
+        <h2 class="text-5xl font-bold mb-6 animate__animated animate__fadeIn text-white">小说建站开源解决方案</h2>
+        <p class="text-xl mb-12 animate__animated animate__fadeInUp text-gray-300">开源小说文学建站 CMS 系统</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition-all duration-300">
+                <div class="text-3xl mb-4 text-white icon-hover">🎨</div>
+                <h3 class="text-xl font-semibold mb-2 text-white">个性化定制开发</h3>
+                <p class="text-gray-300">提供界面及功能个性化定制开发，满足您的独特需求。</p>
+            </div>
+            <div class="bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition-all duration-300">
+                <div class="text-3xl mb-4 text-white icon-hover">✍️</div>
+                <h3 class="text-xl font-semibold mb-2 text-white">优秀作家创作平台</h3>
+                <p class="text-gray-300">为优秀作家提供便捷的创作环境和工具。</p>
+            </div>
+            <div class="bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition-all duration-300">
+                <div class="text-3xl mb-4 text-white icon-hover">📚</div>
+                <h3 class="text-xl font-semibold mb-2 text-white">读者阅读体验</h3>
+                <p class="text-gray-300">优化读者阅读体验，提升用户留存率。</p>
+            </div>
+            <div class="bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition-all duration-300">
+                <div class="text-3xl mb-4 text-white icon-hover">🌐</div>
+                <h3 class="text-xl font-semibold mb-2 text-white">互联网转型需求</h3>
+                <p class="text-gray-300">符合传统出版行业的互联网转型需求。</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 	
 
     <section class="container mx-auto px-6 py-12">
@@ -258,5 +264,11 @@
             <p class="text-sm">Copyright © 2019-2025 小说精品屋 版权所有</p>
         </div>
     </footer>
+	<script>
+		// 初始化粒子背景
+		particlesJS.load('particles-js', 'particles.json', function() {
+			console.log('Particles.js loaded!');
+		});
+	</script>
 </body>
 </html>
