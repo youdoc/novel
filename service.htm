@@ -35,6 +35,26 @@
         .table-hover tbody tr:hover {
             background-color: #f0f4f8;
         }
+       
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #3eaf7c;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        
+		
     </style>
 </head>
 <body class="bg-gray-100">
@@ -42,14 +62,14 @@
 		<div class="container mx-auto px-6 py-4 flex justify-between items-center">
 			<!-- Logo -->
 			<div class="logo">
-				<a href="./index.htm">
+				<a href="./index.html">
 					<img src="./static/logo.png" alt="小说精品屋" class="h-12 animate__animated animate__fadeInLeft hover:rotate-12 hover:scale-110 transition-transform duration-300">
 				</a>
 			</div>
 	
 			<!-- 桌面端导航 -->
 			<nav class="hidden md:flex space-x-8">
-				<a href="./index.html" class="text-gray-700 hover:text-primary font-semibold nav-link relative group">
+				<a href="./index.htm" class="text-gray-700 hover:text-primary font-semibold nav-link relative group">
 					首页
 					<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
 				</a>
@@ -90,7 +110,7 @@
 			</div>
 		</div>
 	</header>
-
+	
 	<script>
 		// 移动端菜单交互
 		const mobileMenuButton = document.getElementById('mobile-menu-button');
